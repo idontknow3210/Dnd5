@@ -416,6 +416,7 @@ option:hover {
 @media (max-width: 767px) {
     .container {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/backphone.jpeg");
+        background-size: 100vw 100vh;
     }
 
     .character {
