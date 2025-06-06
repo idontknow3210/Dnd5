@@ -123,9 +123,11 @@ body {
 }
 
 .container {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/pariz.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/pariz.jpg");
     background-attachment: fixed;
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 
 }
 
@@ -413,7 +415,7 @@ option:hover {
 
 @media (max-width: 767px) {
     .container {
-        background-image: url("./img/backphone.jpeg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/backphone.jpeg");
     }
 
     .character {
