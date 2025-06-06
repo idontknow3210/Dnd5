@@ -413,10 +413,10 @@ option:hover {
     gap: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 760px) {
     .container {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/backphone.jpeg");
-        background-size: 100vw 100vh;
+        background-size: 100vw 120vh;
     }
 
     .character {
