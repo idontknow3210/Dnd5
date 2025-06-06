@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>DnD 5</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="dropdown"><img src="./img/drop-down.svg" alt="drop-down"></div>
+            <button class="glow-on-hover" type="button"><a href="#character">Характеристики</a></button>
+            <button class="glow-on-hover" type="button"><a href="#calc">Калькулятор кубов</a></button>
+            <button class="glow-on-hover" type="button"><a href="#RaR">Редкость предметов</a></button>
+
+        </header>
+        <main class="main">
+            <section class="greeting">
+                <i>
+                    <h1>Удобный софт для игроков DnD 5...</h1>
+                </i>
+            </section>
+            <div class="info">
+                <h2 id="character">Характеристики</h2>
+                <img src="./img/orange.png" alt="line" class="line">
+            </div>
+            <section class="character">
+                <div class="pip">
+                    <div>Стартовые очки:</div>
+                    <div class="result">27</div>
+                </div>
+                <div class="har">
+                    <p>СИЛА</p>
+                    <div class="number">8</div>
+                    <div class="buttons">
+                        <button class="plus">+</button>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="har">
+                    <p>ТЕЛО</p>
+                    <div class="number">8</div>
+                    <div class="buttons">
+                        <button class="plus">+</button>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="har">
+                    <p>ЛОВК</p>
+                    <div class="number">8</div>
+                    <div class="buttons">
+                        <button class="plus">+</button>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="har">
+                    <p>ИНТЕ</p>
+                    <div class="number">8</div>
+                    <div class="buttons">
+                        <button class="plus">+</button>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="har">
+                    <p>МУДР</p>
+                    <div class="number">8</div>
+                    <div class="buttons">
+                        <button class="plus">+</button>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+                <div class="har">
+                    <p>ХАРА</p>
+                    <div class="number">8</div>
+                    <div class="buttons">
+                        <button class="plus">+</button>
+                        <button class="minus">-</button>
+                    </div>
+                </div>
+            </section>
+            <div class="info">
+                <h2 id="calc">Калькулятор кубов</h2>
+                <img src="./img/orange.png" alt="line" class="line">
+            </div>
+            <section class="calculator">
+                <form class="dices">
+                    <div class="dice">
+                        <p>Введи кол-во d4:</p>
+                        <input class="getDice" name="d4" type="text">
+                    </div>
+                    <div class="dice">
+                        <p>Введи кол-во d6:</p>
+                        <input class="getDice" name="d6" type="text">
+                    </div>
+                    <div class="dice">
+                        <p>Введи кол-во d8:</p>
+                        <input class="getDice" name="d8" type="text">
+                    </div>
+                    <div class="dice">
+                        <p>Введи кол-во d10:</p>
+                        <input class="getDice" name="d10" type="text">
+                    </div>
+                    <div class="dice">
+                        <p>Введи кол-во d12:</p>
+                        <input class="getDice" name="d12" type="text">
+                    </div>
+                    <button class="countDice">Посчитать</button>
+                </form>
+                <div class="resultDice">Получилось:</div>
+            </section>
+            <div class="info">
+                <h2 id="RaR">Редкость предметов</h2>
+                <img src="./img/orange.png" alt="line" class="line">
+            </div>
+            <section class="RaR">
+                <div class="procents">
+                    <div class="common">Обычный</div>
+                    +
+                    <div class="uncommon">Необычный</div>
+                    +
+                    <div class="rare">Редкий</div>
+                    +
+                    <div class="veryRare">Очень редкий</div>
+                    +
+                    <div class="legendary">Легендарный</div>
+                    = 100%
+                </div>
+            </section>
+            <section class="getRaR">
+                <i>Выберите уровень подземелья для ваших игроков в соответсвии с их уровнем:</i>
+                <select name="category" id="category">
+                    <option class="common" value="1">1-4ур.</option>
+                    <option class="uncommon" value="2">5-8ур.</option>
+                    <option class="rare" value="3">9-12ур.</option>
+                    <option class="veryRare" value="4">13-16ур.</option>
+                    <option class="legendary" value="5">17-20ур.</option>
+                </select>
+                <button class="btnRaR">Найти предметы</button>
+                <div class="resultRaR">Нашли:
+                    <div class="gold" style="display: none;">
+                        <div><img src="./img/box.gif" alt="box"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
